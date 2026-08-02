@@ -1,0 +1,56 @@
+# DBMS Learning Workspace
+# Keep your coursework and assignment files tracked while ignoring local clutter.
+
+# OS generated files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Editor and IDE files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Python artifacts (useful if you run notebooks or scripts)
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.venv/
+venv/
+env/
+pip-wheel-metadata/
+
+# Jupyter notebooks
+.ipynb_checkpoints/
+
+# Database and backup files
+*.sqlite
+*.sqlite3
+*.db
+*.bak
+*.dump
+*.log
+
+# Archives and downloaded files
+*.zip
+*.tar
+*.gz
+*.7z
+
+# Temporary and build output
+tmp/
+temp/
+build/
+dist/
+out/
+coverage/
+htmlcov/
+*.tmp
+*.temp
+
+# Local notes and scratch work
+scratch/
+notes/
