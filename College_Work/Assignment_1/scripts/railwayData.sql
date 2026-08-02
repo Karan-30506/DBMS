@@ -1,4 +1,5 @@
 USE railway_db;
+SET SQL_SAFE_UPDATES = 0;
 
 delete from trainhalts;
 
@@ -193,3 +194,5 @@ values (
     );
 
 insert into trainhalts values ( 'A65', 8, 'AMR', '22.36', NULL );
+
+SET SQL_SAFE_UPDATES = 1;

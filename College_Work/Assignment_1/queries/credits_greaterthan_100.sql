@@ -1,3 +1,3 @@
 USE university_db;
 
-SELECT * FROM student WHERE tot_cred > 100;
+SELECT id, name FROM student WHERE tot_cred > 100;

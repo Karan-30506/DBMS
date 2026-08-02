@@ -16,4 +16,4 @@ GROUP BY
 HAVING
     semester = "Spring"
     AND year = 2009
-    AND courses_taught >= 3;
+    AND courses_taught >= 1;

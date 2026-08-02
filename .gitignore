@@ -54,3 +54,7 @@ htmlcov/
 # Local notes and scratch work
 scratch/
 notes/
+
+# PDFs and Word Docs
+*.pdf
+*.docx

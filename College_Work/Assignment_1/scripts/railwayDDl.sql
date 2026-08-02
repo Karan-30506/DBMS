@@ -8,7 +8,7 @@ drop table track;
 
 drop table station;
 
---This table contains one row for every halt of a train.
+-- This table contains one row for every halt of a train.
 -- id     : id of the train
 -- seqno  : the halt number. Assume that the starting station has seqno as 0
 -- stcode : station code of this halt
