@@ -1,0 +1,22 @@
+USE university_db;
+SET SQL_SAFE_UPDATES = 0;
+
+ALTER TABLE advisor DROP FOREIGN KEY advisor_ibfk_1;
+
+ALTER TABLE advisor DROP PRIMARY KEY, ADD PRIMARY KEY (s_ID, i_ID);
+
+ALTER TABLE advisor 
+    ADD CONSTRAINT fk_advisor_instructor 
+    FOREIGN KEY (i_ID) REFERENCES instructor (ID) ON DELETE CASCADE;
+
+INSERT INTO instructor VALUES ('77777', 'Ashok', 'Comp. Sci.', 82000);
+INSERT INTO advisor VALUES ('12345', '77777');
+INSERT INTO advisor VALUES ('12345', '22222');
+INSERT INTO advisor VALUES ('12345', '45565'); 
+INSERT INTO advisor VALUES ('00128', '10101'); 
+INSERT INTO advisor VALUES ('00128', '77777');
+INSERT INTO advisor VALUES ('23121', '32343');
+
+SELECT * FROM advisor;
+
+SET SQL_SAFE_UPDATES = 1;

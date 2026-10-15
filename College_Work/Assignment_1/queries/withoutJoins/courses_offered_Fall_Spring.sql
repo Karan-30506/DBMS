@@ -1,5 +1,4 @@
 USE university_db;
-
 SELECT DISTINCT course_id
 FROM section
 WHERE semester = 'Fall'
